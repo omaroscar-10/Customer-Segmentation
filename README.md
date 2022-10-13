@@ -14,7 +14,7 @@ Therefore, this analysis will segment customers so that a company can target the
 
 # **2. Data**
 
-The original dataset is called *Online Retail II UCI* and was downloaded from Kaggle website [Online Retail II UCI](https://www.kaggle.com/mashlyn/online-retail-ii-uci). 
+The original dataset is called *online_retail_II* and was downloaded from Kaggle website [Online Retail II UCI](https://www.kaggle.com/mashlyn/online-retail-ii-uci). 
 
 The dataset contains all the transactions of an online retail store between 01-12-2009 and 09-12-2011.
 
@@ -25,7 +25,7 @@ The dataset contains all the transactions of an online retail store between 01-1
 
 **Data Exploration:** apply statistics and visualization techniques to gain a better understanding of the dataset.
 
-**Feature Engineering:** select or create new features from the existing ones.
+**Feature Engineering:** create new features from the existing ones.
 
 ### **Recency, Frequency, Monetary Value (RFM)**
 
@@ -46,46 +46,9 @@ Recency, frequency, monetary value is a marketing analysis tool used to identify
 
 **K-means**
 
-* Silhouette score with n_clusters=2: 0.5088
+* From the plot it can be seen that the K-Means model identified three classes or groups of customers based on RFM.
 
-**Mini-Batch K-means**
-
-* Silhouette score with n_clusters=2: 0.5065
-
-**Hierarchical Clustering**
-
-* Silhouette score with n_clusters=2 and linkage=ward: 0.5052
-
-* Silhouette score with n_clusters=2 and linkage=complete: 0.4695
-
-* Silhouette score with n_clusters=2 and linkage=average: 0.4618
-
-**DBSCAN**
-
-* Silhouette score with eps=1 and min_samples=27: 0.3729
-
-* Silhouette score with eps=0.6 and min_samples=1: 0.2356
-
-* Silhouette score with eps=0.6 and min_samples=27: 0.2786
-
-**GMM**
-
-* Silhouette score with n_components=2 and covariance_type=full: 0.3510
-
-* Silhouette score with n_components=2 and covariance_type=tied: 0.4765
-
-* Silhouette score with n_components=2 and covariance_type= 0.4007
-
-* Silhouette score with n_components=2 and covariance_type= **0.5223**
-
-The silhouette score of the GMM solution with n_components=2 and covariance_type=spherical is by far the highest among the clustering techniques applied.
-
-As a result, this model is the top performer since it segments customers based Recency, Frequency and Monetary Value (RFM) better than the other models.
-
-GMM identified two classes or groups of customers based on RFM.
-
-One of those groups represent customers who have recently purchased from the company, buy more often and spend more. **These customers are more likely to buy again; they are also likely to buy more often and spend more money.**
-
+One of those groups represent customers who have recently purchased from the company, buy more often and spend more. These customers are more likely to buy again; they are also likely to buy more often and spend more money.
 
 # **5. Discussion & Recomendations**
 
