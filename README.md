@@ -46,7 +46,7 @@ Recency, frequency, monetary value is a marketing analysis tool used to identify
 
 **K-means**
 
-* From the plot it can be seen that the K-Means model identified three classes or groups of customers based on RFM.
+From the plot it can be seen that the K-Means model identified three classes or groups of customers based on RFM.
 
 One of those groups represent customers who have recently purchased from the company, buy more often and spend more. These customers are more likely to buy again; they are also likely to buy more often and spend more money.
 
